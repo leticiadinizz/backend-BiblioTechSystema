@@ -1,5 +1,11 @@
 /* Classe que representa Empréstimo */
 export class Emprestimo {
+    static cadastroEmprestimo(idAluno: number, dataEmprestimo: Date, dataDevolucao: Date, statusEmprestimo: string) {
+        throw new Error("Method not implemented.");
+    }
+    static listagemEmprestimos() {
+        throw new Error("Method not implemented.");
+    }
 
     /* Identificador do Empréstimo */
     private idEmprestimo: number = 0;

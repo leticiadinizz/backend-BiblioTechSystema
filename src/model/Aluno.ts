@@ -1,5 +1,9 @@
 /* Classe que representa um Aluno */
 export class Aluno {
+    static listagemAlunos: any;
+    static cadastroAluno(novoAluno: Aluno) {
+        throw new Error("Method not implemented.");
+    }
 
     /* Identificador do Aluno */
     private idAluno: number = 0;

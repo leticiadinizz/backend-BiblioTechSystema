@@ -1,5 +1,11 @@
 /* Classe que representa um Livro */
 export class Livro {
+    static cadastroLivro(novoLivro: Livro) {
+        throw new Error("Method not implemented.");
+    }
+    static listagemLivros() {
+        throw new Error("Method not implemented.");
+    }
 
     /* Identificador do Livro */
     private idLivro: number = 0;
