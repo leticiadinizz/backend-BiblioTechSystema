@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "73caa7ad-5554-4017-b8f4-d9e496b82152",
+		"name": "BIBLIOTECA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38148752"
+	},
+	"item": [
+		{
+			"name": "Aluno",
+			"item": [
+				{
+					"name": "LISTAR ALUNOS",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CADASTRA ALUNOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n        \"nome\": \"Letícia\",\r\n        \"sobrenome\": \"Diniz\",\r\n        \"dataNascimento\": \"2008-03-21T01:00:00.000Z\",\r\n        \"endereco\": \"Rua almeida, 345\",\r\n        \"email\": \"LetíciaDiniz@email.com\",\r\n        \"celular\": \"1699336622\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETAR ALUNO",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR ALUNO",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emprestimos",
+			"item": [
+				{
+					"name": "LISTAR EMPRESTIMOS",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CADASTRO EMPRESTIMOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idAluno\": 1,\r\n    \"idLivro\": 1,\r\n    \"dataEmprestimo\": \"2024-12-03\",\r\n    \"dataDevolucao\": \"2024-12-10\",\r\n    \"statusEmprestimo\": \"Ativo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETAR EMPRESTIMO",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR EMPRESTIMO",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Livros",
+			"item": [
+				{
+					"name": "LISTAR LIVROS",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CADASTRO LIVROS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Os Sete Maridos de Evelyn Hugo\",\r\n    \"autor\": \"Taylor Jenkins Reid\",\r\n    \"editora\": \"Paralela\",\r\n    \"anoPublicacao\": 2017,\r\n    \"isbn\": \"9788584390926\",\r\n    \"quantTotal\": 10,\r\n    \"quantDisponivel\": 10,\r\n    \"valorAquisicao\": 120.00,\r\n    \"statusLivroEmprestado\": \"Disponível\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETAR LIVRO",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR LIVRO",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
